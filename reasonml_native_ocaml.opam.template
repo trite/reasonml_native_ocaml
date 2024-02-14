@@ -1,6 +1,4 @@
 pin-depends: [
-  [ "bastet.dev" "git+https://github.com/trite/bastet.git#6c8f53a9da55254691df49bddf96b279b38be204" ]
-  [ "relude.dev" "git+https://github.com/reazen/relude.git#v2" ]
   [ "reason.dev" "git+https://github.com/reasonml/reason.git"]
   [ "rtop.dev" "git+https://github.com/reasonml/reason.git"]
 ]
