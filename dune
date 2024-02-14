@@ -1,0 +1,4 @@
+(executable
+ (name reasonml_native_ocaml)
+ (public_name reasonml_native_ocaml)
+ (libraries reasonml_native_ocaml_src))

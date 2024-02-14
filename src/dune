@@ -1,0 +1,3 @@
+(library
+ (name reasonml_native_ocaml_src)
+ (libraries containers stdio))
