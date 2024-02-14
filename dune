@@ -1,4 +1,12 @@
+(dirs :standard \ node_modules)
+
 (executable
- (name reasonml_native_ocaml)
- (public_name reasonml_native_ocaml)
- (libraries dream reasonml_native_ocaml_src))
+ (name server)
+ (libraries server))
+
+(melange.emit
+ (target client)
+ (alias client)
+ (libraries client)
+ (module_systems
+  (es6 mjs)))

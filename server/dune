@@ -1,0 +1,9 @@
+(library
+ (name server)
+ (libraries common dream))
+
+(rule
+ (targets Server.re)
+ (deps Server.eml.re)
+ (action
+  (run dream_eml %{deps} --workspace %{workspace_root})))

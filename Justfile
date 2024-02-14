@@ -11,6 +11,7 @@ hard-reset:
   rm -f reasonml_native_ocaml.opam
   rm -rf _build
   rm -rf _opam
+  rm -rf node_modules
 
 # Create Opam switch
 create-switch:
@@ -18,8 +19,10 @@ create-switch:
 
 # Quick install
 install:
+  npm install
   {{ dune }} build reasonml_native_ocaml.opam # Generate the opam file
   {{ opam }} install -y . --deps-only --with-test
+  {{ opam }} exec opam-check-npm-deps
 
 # Full install, the `&& install` means run the install recipe after this recipe
 full-install: && install

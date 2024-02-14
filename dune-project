@@ -2,6 +2,8 @@
 
 (using directory-targets 0.1)
 
+(using melange 0.1)
+
 (name reasonml_native_ocaml)
 
 (generate_opam_files true)
@@ -23,23 +25,24 @@
  (description "TODO: this")
  (allow_empty)
  (depends
-  (dune
-   (>= 3.11))
-  (ocaml
-   (>= 5.1.0))
-  ppx_deriving
-  ; (reason
-  ;  (>= 3.10.0))
-  reason
-  (dream
-   (>= 1.0.0~alpha5))
   (containers
    (>= 3.13.1))
-  (stdio
-   (>= 0.16.0))
+  (dream
+   (>= 1.0.0~alpha5))
+  (dune
+   (>= 3.11))
+  (melange
+   (>= 2.1.0))
+  (ocaml
+   (>= 5.1.0))
   (ocaml-lsp-server
    (>= 1.17.0))
+  melange-webapi
   ocamlformat
+  opam-check-npm-deps
+  ppx_deriving
+  reason
+  reason-react-ppx
   rtop)
  (tags
   (reasonml, ocaml)))

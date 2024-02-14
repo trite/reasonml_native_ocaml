@@ -1,0 +1,15 @@
+{
+  "name": "reasonml_native_ocaml",
+  "version": "0.0.1",
+  "description": "Needs to be renamed to fullstack-reasonml or something",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.10.0",
+    "jest": "^26.5.2",
+    "vite": "^4.5.0",
+    "vite-plugin-melange": "^2.2.0"
+  }
+}
