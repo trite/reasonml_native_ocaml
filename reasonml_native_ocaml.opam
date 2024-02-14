@@ -14,6 +14,7 @@ depends: [
   "ocaml" {>= "5.1.0"}
   "ppx_deriving"
   "reason"
+  "riot" {>= "0.0.7"}
   "containers" {>= "3.13.1"}
   "stdio" {>= "0.16.0"}
   "ocaml-lsp-server" {>= "1.17.0"}
@@ -37,8 +38,6 @@ build: [
 ]
 dev-repo: "git+https://github.com/trite/reasonml_native_ocaml.git"
 pin-depends: [
-  [ "bastet.dev" "git+https://github.com/trite/bastet.git#6c8f53a9da55254691df49bddf96b279b38be204" ]
-  [ "relude.dev" "git+https://github.com/reazen/relude.git#v2" ]
   [ "reason.dev" "git+https://github.com/reasonml/reason.git"]
   [ "rtop.dev" "git+https://github.com/reasonml/reason.git"]
 ]

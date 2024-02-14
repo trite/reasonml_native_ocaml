@@ -31,6 +31,8 @@
   ; (reason
   ;  (>= 3.10.0))
   reason
+  (riot
+   (>= 0.0.7))
   (containers
    (>= 3.13.1))
   (stdio
