@@ -1,4 +1,4 @@
 (executable
  (name reasonml_native_ocaml)
  (public_name reasonml_native_ocaml)
- (libraries riot reasonml_native_ocaml_src))
+ (libraries dream reasonml_native_ocaml_src))

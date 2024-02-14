@@ -14,7 +14,7 @@ depends: [
   "ocaml" {>= "5.1.0"}
   "ppx_deriving"
   "reason"
-  "riot" {>= "0.0.7"}
+  "dream" {>= "1.0.0~alpha5"}
   "containers" {>= "3.13.1"}
   "stdio" {>= "0.16.0"}
   "ocaml-lsp-server" {>= "1.17.0"}
