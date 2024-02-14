@@ -5,17 +5,23 @@
 open Riot;
 
 type Message.t +=
-  | Hello_world;
+  | Hello(string);
 
 let () =
+  Riot.run @@
   (
-    () =>
-      spawn(() =>
+    () => {
+      let rec loop = () => {
         switch (receive()) {
-        | Hello_world => print_endline("Hello, World! :D")
-        | _ => print_endline("Received something else")
-        }
-      )
-      |> send(_, Hello_world)
-  )
-  |> Riot.run;
+        | Hello(name) => print_endline("Hello, " ++ name ++ "! :D")
+        | _ => print_endline("Oh no, an unhandled message! D:")
+        };
+        loop();
+      };
+
+      let pid = spawn(loop);
+      send(pid, Hello("Joe"));
+      send(pid, Hello("Mike"));
+      send(pid, Hello("Robert"));
+    }
+  );
